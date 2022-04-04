@@ -9,6 +9,9 @@
 #X msg 126 288 1;
 #X obj 200 200 tgl 40 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
+#X text 15 15 detect_dsp.py;
+#X text 12 43 checks the output of an audio object to detect if DSP
+engine is active;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 6 0;
