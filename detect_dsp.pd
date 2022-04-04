@@ -12,6 +12,7 @@
 #X text 15 15 detect_dsp.py;
 #X text 12 43 checks the output of an audio object to detect if DSP
 engine is active;
+#X msg 200 245;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 6 0;
@@ -22,4 +23,5 @@ engine is active;
 #X connect 6 1 4 0;
 #X connect 6 2 7 0;
 #X connect 7 0 8 0;
+#X connect 8 0 11 0;
 #X coords 0 -1 1 1 40 40 2 200 200;
