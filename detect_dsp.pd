@@ -1,27 +1,12 @@
-#N canvas 1027 157 926 900 12;
-#X obj 76 115 osc~ 400;
-#X obj 76 143 env~;
-#X obj 76 167 change;
-#X obj 79 256 del 100;
-#X msg 91 230 stop;
-#X msg 77 285 0;
-#X obj 77 194 t b b b;
-#X msg 126 288 1;
+#N canvas 962 95 956 983 12;
 #X obj 200 200 tgl 40 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 15 15 detect_dsp.py;
-#X text 12 43 checks the output of an audio object to detect if DSP
-engine is active, f 36;
+#X text 198 36 detect_dsp.py;
 #X msg 200 245 \; pd dsp \$1;
-#X connect 0 0 1 0;
-#X connect 1 0 2 0;
-#X connect 2 0 6 0;
-#X connect 3 0 5 0;
-#X connect 4 0 3 0;
-#X connect 5 0 8 0;
-#X connect 6 0 3 0;
-#X connect 6 1 4 0;
-#X connect 6 2 7 0;
-#X connect 7 0 8 0;
-#X connect 8 0 11 0;
+#X obj 200 127 r pd;
+#X obj 200 161 route dsp;
+#X text 128 83 toggle/indicate DSP engine is active;
+#X connect 0 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
 #X coords 0 -1 1 1 40 40 2 200 200;
