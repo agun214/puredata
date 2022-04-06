@@ -1,25 +1,26 @@
-#N canvas 811 487 555 468 12;
-#X obj 101 201 tgl 48 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#N canvas 619 416 555 468 12;
+#X obj 101 251 tgl 48 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X msg 101 384 \; pd dsp \$1;
-#X obj 101 57 r pd;
-#X obj 101 81 route dsp;
-#X obj 101 296 spigot;
-#X obj 101 321 t b f b;
-#X msg 161 353 1, f 1;
-#X msg 207 353 0, f 1;
-#X obj 190 214 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X msg 101 404 \; pd dsp \$1;
+#X obj 101 101 r pd;
+#X obj 101 125 route dsp;
+#X obj 101 316 spigot;
+#X obj 101 341 t b f b;
+#X msg 161 373 1, f 1;
+#X msg 207 373 0, f 1;
+#X obj 180 264 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 101 113 spigot;
-#X obj 101 138 t b f b;
-#X msg 101 160 1, f 1;
-#X msg 147 160 0, f 1;
-#X obj 270 81 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 101 151 spigot;
+#X obj 101 176 t b f b;
+#X msg 101 198 1, f 1;
+#X msg 147 198 0, f 1;
+#X obj 270 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X text 88 6 dsp_detect.py;
-#X msg 359 129 1;
-#X obj 359 104 loadbang;
-#X text 89 23 toggle/indicate DSP engine;
+#X text 8 6 dsp_detect.py;
+#X msg 309 129 1;
+#X obj 309 104 loadbang;
+#X text 9 25 toggle/indicate DSP engine;
+#X text 14 48 (credit for patch concept: Esa Juhani Ruoho);
 #X connect 0 0 4 0;
 #X connect 2 0 3 0;
 #X connect 3 0 9 0;
@@ -40,4 +41,4 @@
 #X connect 15 0 13 0;
 #X connect 15 0 8 0;
 #X connect 16 0 15 0;
-#X coords 0 -1 1 1 50 50 2 100 200;
+#X coords 0 -1 1 1 50 50 2 100 250;
