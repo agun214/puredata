@@ -1,4 +1,4 @@
-#N canvas 2 582 956 496 12;
+#N canvas 825 551 956 496 12;
 #X obj 299 104 inlet;
 #X symbolatom 200 219 15 0 0 0 - - -;
 #X obj 76 101 inlet;
@@ -36,6 +36,7 @@
 #X connect 2 0 16 0;
 #X connect 6 0 7 0;
 #X connect 6 0 24 0;
+#X connect 6 0 21 0;
 #X connect 7 0 8 0;
 #X connect 8 0 11 0;
 #X connect 8 1 14 0;
